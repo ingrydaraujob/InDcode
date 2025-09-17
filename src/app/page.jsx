@@ -8,7 +8,7 @@ export default function HomePage() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [typingSpeed, setTypingSpeed] = useState(150);
-  const words = ['futuro', 'sucesso', 'inovação'];
+  const words = ['futuro', 'online', 'digital'];
   
   // Referências para as seções
   const servicesRef = useRef(null);

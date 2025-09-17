@@ -109,14 +109,12 @@ const itemVariants = {
   transition={{ type: "spring", stiffness: 200, damping: 10 }}
   className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
 >
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 448 512"
-    className="w-6 h-6"
-    fill="currentColor"
-  >
-    <path d="M380.9 97.1C339-2.9 207.1-32.3 117.1 28.1 27 88.6-3.5 220.4 57 310.4l-15.9 73.9c-2.7 12.7 8.5 23.8 21.2 21.1l74-15.9c89.9 60.6 221.8 30.1 282.3-60 60.5-90 31.1-221.9-38.7-281.9zM224 416c-36.5 0-72.1-9.6-103.4-28L96 400l12-55.2c-19.2-30.2-29.3-65.2-29.2-101.4C78.9 153.8 143.7 88 224 88c80.3 0 145.1 65.8 145.1 145.3 0 80.2-65.8 145.1-145.1 145.1zM273.6 303c-4.1-2.1-24.1-11.9-27.9-13.2-3.8-1.4-6.6-2.1-9.4 2.1-2.8 4.1-10.8 13.2-13.2 15.9-2.4 2.8-4.9 3.2-9 1.1-24.5-12.3-40.5-22-56.7-49.7-4.3-7.4 4.3-6.9 12.3-23.1 1.4-2.8.7-5.2-.4-7.4-1.1-2.1-9.4-22.7-12.9-31.2-3.4-8.2-6.9-7.1-9.4-7.2-2.4-.1-5.2-.1-8-.1s-7.4 1.1-11.3 5.2c-3.9 4.1-14.8 14.4-14.8 35.2s15.2 40.9 17.3 43.7c2.1 2.8 29.9 45.7 72.5 64.1 10.1 4.3 18 6.9 24.2 8.9 10.1 3.2 19.2 2.7 26.4 1.6 8.1-1.2 24.1-9.8 27.5-19.3 3.4-9.4 3.4-17.4 2.4-19.3-.9-1.9-3.7-3-7.8-5.1z" />
-  </svg>
+  <img
+    src="/whatsapp-modern.svg"
+    alt="WhatsApp"
+    className="w-8 h-8"
+    style={{ display: 'block' }}
+  />
 </motion.button>
 
       
@@ -276,201 +274,7 @@ const itemVariants = {
       </div>
     </section>
 
-    {/* Services Section */}
-<section id="services" ref={servicesRef} className="py-24 bg-gradient-to-b from-gray-50 to-gray-100 relative overflow-hidden">
-  {/* Elementos de fundo decorativos */}
-  <div className="absolute top-0 left-0 w-full h-full opacity-5">
-    <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow"></div>
-    <div className="absolute top-60 right-10 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-2000"></div>
-    <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-4000"></div>
-  </div>
 
-  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-    <motion.div 
-      className="text-center mb-20"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
-      variants={{
-        hidden: { opacity: 0, y: 50 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.6, ease: "easeOut" }
-        }
-      }}
-    >
-      <motion.div 
-        className="mono text-indigo-600 text-sm font-medium mb-4 tracking-wider inline-block px-4 py-1 bg-indigo-100 rounded-full"
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.2 }}
-        viewport={{ once: true }}
-      >
-        &lt;/SERVIÇOS&gt;
-      </motion.div>
-      <motion.h2 
-        className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
-        viewport={{ once: true }}
-      >
-        Soluções <span className="gradient-text bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">completas</span>
-      </motion.h2>
-      <motion.p 
-        className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        viewport={{ once: true }}
-      >
-        Oferecemos um ecossistema completo de serviços digitais para impulsionar sua presença online e otimizar seus processos
-      </motion.p>
-    </motion.div>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <motion.div 
-        className="group relative"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.5 }
-          }
-        }}
-      >
-        <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-        <div className="service-card relative bg-white rounded-2xl p-8 h-full border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-            </svg>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">Sites Responsivos</h3>
-          <p className="text-gray-600 mb-6">Experiências perfeitas em todos os dispositivos - mobile, tablet e desktop com performance otimizada e carregamento ultrarrápido.</p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Mobile-First</span>
-            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">SEO Otimizado</span>
-            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Performance</span>
-          </div>
-         
-        </div>
-      </motion.div>
-
-      <motion.div 
-        className="group relative"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.5, delay: 0.1 }
-          }
-        }}
-      >
-        <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-        <div className="service-card relative bg-white rounded-2xl p-8 h-full border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">Sistemas Sob Medida</h3>
-          <p className="text-gray-600 mb-6">Ferramentas personalizadas para automatizar processos, integrar sistemas existentes e aumentar a produtividade da sua empresa.</p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Customização</span>
-            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Automação</span>
-            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Integração</span>
-          </div>
-         
-        </div>
-      </motion.div>
-
-      <motion.div 
-        className="group relative"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.5, delay: 0.2 }
-          }
-        }}
-      >
-        <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-        <div className="service-card relative bg-white rounded-2xl p-8 h-full border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
-            </svg>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">Design UI/UX</h3>
-          <p className="text-gray-600 mb-6">Interfaces intuitivas e experiências visuais que encantam usuários, aumentam o engajamento e maximizam conversões.</p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">User Research</span>
-            <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Prototipagem</span>
-            <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Testes A/B</span>
-          </div>
-         
-        </div>
-      </motion.div>
-
-      <motion.div 
-        className="group relative"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.5, delay: 0.3 }
-          }
-        }}
-      >
-        <div className="absolute -inset-1 bg-gradient-to-r from-red-500 to-pink-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-        <div className="service-card relative bg-white rounded-2xl p-8 h-full border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
-            </svg>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">Manutenção & Suporte 24/7</h3>
-          <p className="text-gray-600 mb-6">Monitoramento contínuo, atualizações de segurança, backups automáticos e suporte técnico especializado sempre que precisar.</p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            <span className="px-3 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">Monitoramento</span>
-            <span className="px-3 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">Backups</span>
-            <span className="px-3 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">Suporte</span>
-          </div>
-        
-        </div>
-      </motion.div>
-    </div>
-
-    <motion.div 
-      className="text-center mt-16"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.5 }}
-      viewport={{ once: true }}
-    >
-      
-    </motion.div>
-  </div>
-</section>
 
       {/* Differentials Section */}
 <section id="differentials" className="py-24 bg-white relative overflow-hidden">
@@ -801,12 +605,7 @@ const itemVariants = {
               </svg>
               <span>WhatsApp</span>
             </button>
-            <button onClick={openEmail} className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center space-x-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-              <span>E-mail</span>
-            </button>
+          
           </motion.div>
           
           {/* Contact Info */}
